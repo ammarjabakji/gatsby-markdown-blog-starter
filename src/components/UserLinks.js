@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./UserLinks.css";
+import styles from  './UserLinks.module.scss'
 
 class UserLinks extends Component {
   getLinkElements() {
@@ -17,7 +17,7 @@ class UserLinks extends Component {
     if (!userLinks) {
       return null;
     }
-    return <div className="user-links">{this.getLinkElements()}</div>;
+    return <div className={styles.userLinks}>{this.getLinkElements()}</div>;
   }
 }
 

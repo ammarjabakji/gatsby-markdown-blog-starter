@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-
-import "./Footer.css";
+import styles from  './Footer.module.scss'
 
 export default class Footer extends Component {
   
   render() {
     return (
-      <footer className="footer container">
+      <footer className={styles.footer}>
 
         <a href="https://twitter.com/xx" target="_blank" rel="noopener noreferrer">
           Twitter

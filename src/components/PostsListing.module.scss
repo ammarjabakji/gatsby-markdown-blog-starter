@@ -1,0 +1,26 @@
+.article-box {
+    margin-bottom: 30px;
+    display: inline-block;
+    width: auto;
+    transition: all 0.25s ease;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .right {
+        padding: 15px;
+        color: #212121;
+        margin-top: -20px;
+
+        .date {
+            margin-top: -15px;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+
+        h3 {
+            color: #212121;
+        }
+    }
+}
