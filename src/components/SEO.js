@@ -5,7 +5,10 @@ import config from "../../data/SiteConfig"
 
 class SEO extends Component {
   render() {
+
     const { postNode, postPath, postSEO } = this.props;
+    console.log(postSEO);
+
     let title;
     let description;
     let image;
