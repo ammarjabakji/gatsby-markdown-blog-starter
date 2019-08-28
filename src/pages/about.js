@@ -8,10 +8,10 @@ class AboutPage extends Component {
   render() {
     return (
       <Layout>
-        <div className="about-container">
+        <main>
           <Helmet title={`About | ${config.siteTitle}`} />
           <About />
-        </div>
+        </main>
       </Layout>
     );
   }

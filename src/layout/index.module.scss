@@ -8,5 +8,13 @@ html {
 
 body {
     margin: 0;
-    padding: 20px;
+    color: hsla(0, 0, 0, 0.9);
+    font-family: 'Merriweather', 'Georgia', serif;
+    font-weight: 400;
+}
+
+main {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    overflow: hidden;
 }

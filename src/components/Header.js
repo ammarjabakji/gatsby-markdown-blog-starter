@@ -7,14 +7,17 @@ export default class Header extends Component {
   render() {
     return (
       <header>
-        <div>
-          <h1>
-            <Link to="/">{config.siteTitle}</Link>
-          </h1>
+        <h1>
+          <Link to="/">{config.siteTitle}</Link>
+        </h1>
 
+        <nav>
           <ul>
             <li>
               <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/">Blog</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>
@@ -22,9 +25,8 @@ export default class Header extends Component {
             <li>
               <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
             </li>
-          </ul>
-          
-        </div>
+          </ul>   
+        </nav>
       </header>
     );
   }

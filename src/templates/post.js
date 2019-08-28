@@ -24,7 +24,7 @@ export default class PostTemplate extends React.Component {
     }
     return (
       <Layout>
-        <div>
+        <main>
           <Helmet>
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
@@ -38,7 +38,7 @@ export default class PostTemplate extends React.Component {
             </div>
             <UserInfo config={config} />
           </div>
-        </div>
+        </main>
       </Layout>
     );
   }
