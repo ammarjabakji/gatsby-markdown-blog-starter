@@ -165,7 +165,11 @@ module.exports = {
             }
           `,
             output: config.siteRss,
+<<<<<<< HEAD
             title: config.siteRss
+=======
+            title:config.siteRss
+>>>>>>> b1
           }
         ]
       }
