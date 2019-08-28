@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -15,7 +15,7 @@ import {
   RedditIcon
 } from "react-share";
 import urljoin from "url-join";
-import config from "../../../data/SiteConfig";
+import config from "../../data/SiteConfig";
 import "./SocialLinks.css";
 
 class SocialLinks extends Component {
@@ -64,4 +64,4 @@ class SocialLinks extends Component {
   }
 }
 
-export default SocialLinks;
+export default SocialLinks

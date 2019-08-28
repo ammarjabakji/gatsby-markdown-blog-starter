@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "./UserLinks.css";
+import React, { Component } from "react"
+import "./UserLinks.css"
 
 class UserLinks extends Component {
   getLinkElements() {
@@ -21,4 +21,4 @@ class UserLinks extends Component {
   }
 }
 
-export default UserLinks;
+export default UserLinks
