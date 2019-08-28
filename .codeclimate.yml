@@ -21,7 +21,6 @@ checks:
 ratings:
    paths:
     - "**.js"
-    - "**.jsx"
     - "**.css"
     - "**.less"
     - "**.scss"
