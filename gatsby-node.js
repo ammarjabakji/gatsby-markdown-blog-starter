@@ -124,7 +124,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     });
   });
-
+ // Generate link foreach tag page
   tagSet.forEach(tag => {
     createPage({
       path: `/tags/${_.kebabCase(tag)}/`,
@@ -134,9 +134,10 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     });
   });
+  // Generate link foreach category page
   categorySet.forEach(category => {
     createPage({
-      path: `/categories/${_.kebabCase(category)}/`,
+      path: `/${_.kebabCase(category)}/`,
       component: categoryPage,
       context: {
         category
