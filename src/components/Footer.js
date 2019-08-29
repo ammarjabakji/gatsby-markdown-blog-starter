@@ -30,7 +30,7 @@ export default class Footer extends Component {
               RSS
             </a>
           </div>
-          <div>{config.copyright}</div>
+          <div className={styles.copyright}>{config.copyright}</div>
         </div>
       </footer>
     );

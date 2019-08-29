@@ -22,7 +22,7 @@ class PostListing extends React.Component {
   render() {
     const postList = this.getPostList();
     return (
-      <div>
+      <div className={styles.articleList}>
         {/* Your post list here. */
         postList.map(post => (
           <Link to={post.path} key={post.title}>
@@ -30,7 +30,7 @@ class PostListing extends React.Component {
               <div className={styles.right}>
                 <h3>{post.title}</h3>
                 <div className={styles.date}>{post.date}</div>
-                <div>{post.excerpt}</div>
+                <p>{post.excerpt}</p>
               </div>
             </article>
           </Link>

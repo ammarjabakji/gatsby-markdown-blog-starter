@@ -1,26 +1,31 @@
-.article-box {
-    margin-bottom: 30px;
-    display: inline-block;
-    width: auto;
-    transition: all 0.25s ease;
+.article-list {
+    display: grid;
+    grid-template-columns: 50% 50%;
 
-    &:hover {
-        cursor: pointer;
-    }
+    .article-box {
+        margin-bottom: 30px;
+        display: inline-block;
+        width: auto;
+        transition: all 0.25s ease;
 
-    .right {
-        padding: 15px;
-        color: #212121;
-        margin-top: -20px;
-
-        .date {
-            margin-top: -15px;
-            margin-bottom: 20px;
-            font-size: 12px;
+        &:hover {
+            cursor: pointer;
         }
 
-        h3 {
+        .right {
+            padding: 15px;
             color: #212121;
+            margin-top: -20px;
+
+            .date {
+                margin-top: -15px;
+                margin-bottom: 20px;
+                font-size: 12px;
+            }
+
+            h3 {
+                color: #212121;
+            }
         }
     }
 }

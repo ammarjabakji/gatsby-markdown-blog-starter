@@ -28,4 +28,3 @@ ratings:
 
 exclude_paths:
 - static/**/*
-- src/templates/b16-tomorrow-dark.css
