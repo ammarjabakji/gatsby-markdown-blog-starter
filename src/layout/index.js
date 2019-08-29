@@ -11,14 +11,14 @@ export default class MainLayout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <div>
+      <>
         <Header />  
         <Helmet>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         {children}
         <Footer /> 
-      </div>
+      </>
     );
   }
 }

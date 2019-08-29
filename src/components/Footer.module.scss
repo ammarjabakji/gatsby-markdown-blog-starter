@@ -1,25 +1,19 @@
-.footer {
-    justify-content: center;
-    align-content: center;
-    padding: 10px 5px 5px;
-}
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 0 40px 0;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: auto;
 
-.notice-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    margin-top: 25px;
-
-    h4 {
-        text-align: center;
-        margin: 0;
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50rem;
     }
-}
 
-@media (max-width: 640px - 1px) {
-    .notice-container {
-        justify-content: space-around;
+    a {
+        color:#fff;
+        margin: 10px;
     }
 }
