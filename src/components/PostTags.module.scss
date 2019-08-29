@@ -1,0 +1,15 @@
+.tag-container {
+    a {
+        text-decoration: none;
+    }
+
+    span {
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 0.3rem 0.8rem;
+        margin: 0.5rem;
+        border-radius: 3px;
+        background: rgba(0, 0, 0, 0.05);
+        color: rgba(0, 0, 0, 0.54);
+    }
+}

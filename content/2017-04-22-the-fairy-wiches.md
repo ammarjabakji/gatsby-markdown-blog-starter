@@ -4,7 +4,6 @@ title: "The Fairy's Witches"
 cover: "https://unsplash.it/1152/300/?random?FaityWitch"
 category: "something"
 ---
-# Eram mora tuas in inter ferens caterva
 
 ## Ait oculos
 

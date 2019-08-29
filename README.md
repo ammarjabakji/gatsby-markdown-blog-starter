@@ -6,7 +6,7 @@
     <img src="static/logos/logo-1024.png" alt="Logo" width='200px' height='200px'/>
 </div>
 
-# Gatsby Markdown Boost Starter
+# Gatsby Markdown Blog Starter
 
 A markdown blog starter skeleton with advanced features for [Gatsby](https://github.com/Vagr9K/gatsby-advanced-starter).
 

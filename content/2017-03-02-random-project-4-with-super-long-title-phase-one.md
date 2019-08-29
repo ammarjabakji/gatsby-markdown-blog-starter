@@ -6,7 +6,6 @@ category: "random"
 tags:
     - say hi
 ---
-# Artificem honorati ore temperat Lycus quam antiquum
 
 ## Mendaci pinu ipsi nunc
 

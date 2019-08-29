@@ -23,7 +23,7 @@ class SocialLinks extends Component {
     const { postNode, postPath, mobile } = this.props;
     const post = postNode.frontmatter;
     const url = urljoin(config.siteUrl, config.pathPrefix, postPath);
-    const iconSize = mobile ? 36 : 48;
+    const iconSize = mobile ? 32 : 32;
     const filter = count => (count > 0 ? count : "");
     const renderShareCount = count => (
       <div className={styles.shareCount}>{filter(count)}</div>

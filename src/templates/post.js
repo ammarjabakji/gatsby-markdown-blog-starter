@@ -16,6 +16,7 @@ export default class PostTemplate extends React.Component {
     const { slug } = pageContext;
     const postNode = data.markdownRemark;
     const post = postNode.frontmatter;
+    const date = postNode.fields.date;
     if (!post.id) {
       post.id = slug;
     }
@@ -31,11 +32,12 @@ export default class PostTemplate extends React.Component {
           <SEO postPath={slug} postNode={postNode} postSEO />
           <div>
             <h1>{post.title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+            <p>{date}</p>
             <div className={styles.postMeta}>
               <PostTags tags={post.tags} />
               <SocialLinks postPath={slug} postNode={postNode} />
             </div>
+            <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
             <UserInfo config={config} />
           </div>
         </main>
@@ -60,7 +62,7 @@ export const pageQuery = graphql`
       }
       fields {
         slug
-        date
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }

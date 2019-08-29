@@ -11,7 +11,6 @@ tags:
     - stuff
     - other
 ---
-# Hanc indeploratum seram Amphitryoniadae tremulis pauperque manum
 
 ## Cognoscenti audeat ulterius sublimia terga potiorque saxo
 

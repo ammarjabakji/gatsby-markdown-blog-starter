@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-boost-advanced",
-  "description": "GatsbyJS  boost starter that includes examples for markdown use cases.",
+  "name": "gatsby-Blog-advanced",
+  "description": "GatsbyJS  Blog starter that includes examples for markdown use cases.",
   "version": "1.1.0",
   "author": "Ammar Jabakji <ammarjabakji@gmail.com>",
   "dependencies": {

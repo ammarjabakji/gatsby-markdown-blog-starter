@@ -1,5 +1,7 @@
 .social-links {
-    display: flex;
+    position: fixed;
+    top: 100px;
+    left: 30px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

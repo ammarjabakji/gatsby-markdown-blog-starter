@@ -11,7 +11,6 @@ tags:
   - test
   - gatsby
 ---
-# Domos primus caelum taedia
 
 ## Accipit alto fecerat mutato centauri haerent dominoque
 

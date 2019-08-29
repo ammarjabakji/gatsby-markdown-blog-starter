@@ -11,10 +11,11 @@ export default class TagTemplate extends React.Component {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <Layout>
-        <div className="tag-container">
+        <main>         
           <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
           <PostListing postEdges={postEdges} />
-        </div>
+        </main>
+
       </Layout>
     );
   }
@@ -33,7 +34,7 @@ export const pageQuery = graphql`
         node {
           fields {
             slug
-            date
+            date(formatString: "MMMM DD, YYYY")
           }
           excerpt
           timeToRead

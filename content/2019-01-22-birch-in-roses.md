@@ -7,8 +7,6 @@ tags:
     - tag
 ---
 
-# Domos primus caelum taedia
-
 ## Accipit alto fecerat mutato centauri haerent dominoque
 
 Lorem markdownum nunc fuerat vulgaris ipse. Profecisse Atridae flumen perit
