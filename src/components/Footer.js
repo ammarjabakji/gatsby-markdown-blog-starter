@@ -2,37 +2,36 @@ import React from 'react'
 import styles from './Footer.module.scss'
 import config from '../../data/SiteConfig'
 
-const Footer = () => {
-  return (
-    <footer>
-      <div className={styles.container}>
-        <div>
-          <a
-            href="https://twitter.com/xx"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+const Footer = () => (
+  <footer>
+    <div className={styles.container}>
+      <div>
+        <a
+          href="https://twitter.com/xx"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
             Twitter
-          </a>
-          <a
-            href="https://github.com/xx"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        </a>
+        <a
+          href="https://github.com/xx"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
             GitHub
-          </a>
-          <a
-            href={config.siteUrl + config.siteRss}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        </a>
+        <a
+          href={config.siteUrl + config.siteRss}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
             RSS
-          </a>
-        </div>
-        <div className={styles.copyright}>{config.copyright}</div>
+        </a>
       </div>
-    </footer>
+      <div className={styles.copyright}>{config.copyright}</div>
+    </div>
+  </footer>
   )
-}
+
 
 export default Footer

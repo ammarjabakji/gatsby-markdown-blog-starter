@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styles from  './PostsListing.module.scss'
 
-  const PostListing = (props) => {
+  const PostListing = ({ postEdges }) => {
     const getPostList = () => {
     const postList = [];
-    props.postEdges.forEach(postEdge => {
+    postEdges.forEach(postEdge => {
       postList.push({
         path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
@@ -39,4 +39,4 @@ import styles from  './PostsListing.module.scss'
     
   }
 
-export default PostListing;
+export default PostListing

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from 'react'
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -13,14 +13,12 @@ import {
   TelegramIcon,
   LinkedinIcon,
   RedditIcon
-} from "react-share";
-import urljoin from "url-join";
-import config from "../../data/SiteConfig";
+} from 'react-share'
+import urljoin from 'url-join'
+import config from '../../data/SiteConfig'
 import styles from  './SocialLinks.module.scss'
 
-class SocialLinks extends Component {
-  render() {
-    const { postNode, postPath, mobile } = this.props;
+const SocialLinks = ({ postNode, postPath, mobile }) => {
     const post = postNode.frontmatter;
     const url = urljoin(config.siteUrl, config.pathPrefix, postPath);
     const iconSize = mobile ? 32 : 32;
@@ -60,8 +58,7 @@ class SocialLinks extends Component {
           <TelegramIcon round size={iconSize} />
         </TelegramShareButton>
       </div>
-    );
+    )
   }
-}
 
-export default SocialLinks;
+export default SocialLinks

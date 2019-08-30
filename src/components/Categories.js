@@ -1,5 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql , Link } from 'gatsby'
+import _ from "lodash";
 
 const Categories = () => {
 
@@ -19,7 +20,7 @@ const Categories = () => {
         {data.allMarkdownRemark.group.map(category => (
           <li key={category.fieldValue}>
             <Link
-              to={`/${category.fieldValue.replace(/\s+/g, "-").toLowerCase()}`}
+              to={`/${_.kebabCase(category.fieldValue)}`}
               key={category.fieldValue}
             >
               {category.fieldValue}
