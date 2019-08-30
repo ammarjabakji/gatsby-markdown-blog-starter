@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
 import config from "../../data/SiteConfig";
+import Categories from "./Categories"
 import styles from "./Header.module.scss"
 
 export default class Header extends Component {
@@ -16,17 +17,13 @@ export default class Header extends Component {
             <li>
               <Link to="/about">About</Link>
             </li>
-            <li>
-              <Link to="/">Blog</Link>
-            </li>
+            <Categories />
             <li>
               <Link to="/contact">Contact</Link>
             </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </li>
           </ul>   
         </nav>
+       
       </header>
     );
   }

@@ -157,7 +157,7 @@ module.exports = {
                       title
                       cover
                       date
-                      category
+                      categories
                       tags
                     }
                   }
@@ -166,7 +166,7 @@ module.exports = {
             }
           `,
             output: config.siteRss,
-            title:config.siteRss
+            title: config.siteRss
           }
         ]
       }

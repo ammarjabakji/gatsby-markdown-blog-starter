@@ -4,7 +4,9 @@ title: 'Developing a Gatsby Theme'
 thumbnail: '../thumbnails/wp.png'
 cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"
 slug: developing-a-gatsby-theme
-category: "nodejs"
+categories: 
+    - Nodejs
+    - Creative Thinking
 tags:
   - test
   - gatsby
