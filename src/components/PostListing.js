@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "gatsby";
-import styles from  "./PostsListing.module.scss"
+import React from 'react'
+import { Link } from 'gatsby'
+import styles from  './PostsListing.module.scss'
 
-class PostListing extends React.Component {
-  getPostList() {
+  const PostListing = (props) => {
+    const getPostList = () => {
     const postList = [];
-    this.props.postEdges.forEach(postEdge => {
+    props.postEdges.forEach(postEdge => {
       postList.push({
         path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
@@ -14,13 +14,12 @@ class PostListing extends React.Component {
         date: postEdge.node.fields.date,
         excerpt: postEdge.node.excerpt,
         timeToRead: postEdge.node.timeToRead
-      });
-    });
+      })
+    })
     return postList;
-  }
+    }
 
-  render() {
-    const postList = this.getPostList();
+    const postList = getPostList();
     return (
       <div className={styles.articleList}>
         {/* Your post list here. */
@@ -36,8 +35,8 @@ class PostListing extends React.Component {
           </Link>
         ))}
       </div>
-    );
+    )
+    
   }
-}
 
 export default PostListing;

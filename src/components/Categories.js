@@ -1,31 +1,38 @@
-import React from "react";
-import { Link } from "gatsby";
-import { StaticQuery, graphql } from "gatsby";
+import React from 'react'
+import { useStaticQuery, graphql , Link } from 'gatsby'
 
+const Categories = () => {
 
-export default () => (
-  <StaticQuery
-    query={graphql`
+  const data = useStaticQuery(graphql`
       query {
         allMarkdownRemark(limit: 2000) {
           group(field: frontmatter___categories) {
-            fieldValue
-            totalCount
-          }
+                  fieldValue
+                  totalCount
+                }
         }
       }
-    `}
-    render={data => (
+    `)
+
+    return (
       <>
         {data.allMarkdownRemark.group.map(category => (
           <li key={category.fieldValue}>
-            <Link to={`/${(category.fieldValue).replace(/\s+/g, '-').toLowerCase()}`} key={category.fieldValue}>
+            <Link
+              to={`/${category.fieldValue.replace(/\s+/g, "-").toLowerCase()}`}
+              key={category.fieldValue}
+            >
               {category.fieldValue}
               <strong>({category.totalCount})</strong>
             </Link>
           </li>
         ))}
       </>
-    )}
-  />
-);
+    )
+
+}
+
+export default Categories
+
+
+
