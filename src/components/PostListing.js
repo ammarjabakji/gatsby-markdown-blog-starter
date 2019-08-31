@@ -29,7 +29,7 @@ import styles from  './PostsListing.module.scss'
             <article className={styles.articleBox}>
               <div className={styles.right}>
                 <h3>{post.title}</h3>
-                <div className={styles.meta}>{post.date}  &mdash; {post.timeToRead} Min Read &mdash; {post.categories ? post.categories.join(' ') : post.categories} </div>
+                <div className={styles.meta}>{post.date}  &mdash; {post.timeToRead} Min Read &mdash; {post.categories ? post.categories.join('/ ') : post.categories} </div>
                 <p>{post.excerpt}</p>
               </div>
             </article>
