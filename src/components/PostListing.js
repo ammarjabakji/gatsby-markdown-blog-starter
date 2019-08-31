@@ -9,7 +9,7 @@ import styles from  './PostsListing.module.scss'
       postList.push({
         path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
-        categories: postEdge.node.frontmatter.categories.join('/ '),
+        categories: postEdge.node.frontmatter.categories,
         cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.fields.date,
