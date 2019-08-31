@@ -9,6 +9,7 @@ import styles from  './PostsListing.module.scss'
       postList.push({
         path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
+        categories: postEdge.node.frontmatter.categories.join('/ '),
         cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.fields.date,
@@ -28,7 +29,7 @@ import styles from  './PostsListing.module.scss'
             <article className={styles.articleBox}>
               <div className={styles.right}>
                 <h3>{post.title}</h3>
-                <div className={styles.date}>{post.date}</div>
+                <div className={styles.meta}>{post.date}  &mdash; {post.timeToRead} Min Read &mdash; {post.categories} </div>
                 <p>{post.excerpt}</p>
               </div>
             </article>
