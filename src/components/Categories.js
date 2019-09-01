@@ -24,7 +24,7 @@ const Categories = () => {
               key={category.fieldValue}
             >
               {category.fieldValue}
-              <strong>({category.totalCount})</strong>
+              <strong> ({category.totalCount})</strong>
             </Link>
           </li>
         ))}

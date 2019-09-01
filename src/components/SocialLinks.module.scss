@@ -18,3 +18,11 @@
 .share-count {
     text-align: center;
 }
+
+@media (max-width: 1200px) {
+    .social-links {
+        position: relative;
+        display: inline-flex;
+        height: 100px;
+    }
+}

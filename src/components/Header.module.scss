@@ -11,11 +11,12 @@ header {
     z-index: 9;
     margin-left: auto;
     margin-right: auto;
+    height: 70px;
 
     a {
         text-decoration: none;
         color: #3c4856;
-        font-size: 1.7rem;
+        font-size: 1.1rem;
     }
 
     nav a {
@@ -24,8 +25,8 @@ header {
         text-decoration: none;
         display: inline-block;
         position: relative;
-        font-weight: 700;
-        font-size: 0.9rem;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
 
         &:hover {
             color: inherit;
@@ -37,7 +38,7 @@ header {
             left: 0;
             height: 1em;
             width: 100%;
-            border-bottom: 3px solid;
+            border-bottom: 2px solid #4f647d;
             margin-top: 10px;
             opacity: 0;
             -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -73,8 +74,23 @@ ul {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     header {
         display: block;
+        height: 140px;
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        strong {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    header nav a {
+        font-size: 13px;
     }
 }

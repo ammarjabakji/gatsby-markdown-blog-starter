@@ -22,6 +22,7 @@
     "jsx-a11y/accessible-emoji": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "jsx-a11y/label-has-for": "off",
+    "eslint.autoFixOnSave": true,
     "jsx-a11y/anchor-is-valid": [
       0,
       {
