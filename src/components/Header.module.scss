@@ -11,10 +11,10 @@ header {
     z-index: 9;
     margin-left: auto;
     margin-right: auto;
-    height: 70px;
+    height: 60px;
 
     h1 {
-        margin-top: 0;
+        margin-top: 10px;
     }
 
     a {
@@ -75,7 +75,7 @@ ul {
 @media (max-width: 1000px) {
     header {
         display: block;
-        height: 140px;
+        height: 120px;
     }
 }
 

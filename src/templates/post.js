@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { graphql , Link } from 'gatsby'
 import Layout from '../layout'
 import UserInfo from '../components/UserInfo'
 import PostTags from '../components/PostTags'
@@ -10,7 +10,7 @@ import config from '../../data/SiteConfig'
 import styles from  './post.module.scss'
 
 export default  ({ data, pageContext }) => {
-  const { slug } = pageContext;
+  const { slug , nexttitle , nextslug , prevtitle , prevslug } = pageContext;
   const postNode = data.markdownRemark;
   const post = postNode.frontmatter;
   const date = postNode.fields.date;
@@ -34,6 +34,28 @@ export default  ({ data, pageContext }) => {
           </div>
           <UserInfo config={config} />
         </div>
+        <nav>
+          <ul
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-between`,
+              listStyle: `none`,
+              padding: 0,
+            }}
+          >
+            <li>
+              <Link to={prevslug} rel="prev">
+                ← {prevtitle}
+              </Link>
+            </li>
+            <li>
+              <Link to={nextslug} rel="next">
+                {nexttitle} →
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </main>
     </Layout>
   )
