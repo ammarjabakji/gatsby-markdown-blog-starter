@@ -18,6 +18,7 @@ module.exports = {
     }
   },
   plugins: [
+    
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-htaccess",
@@ -34,6 +35,12 @@ module.exports = {
         name: "posts",
         path: `${__dirname}/content/`
       }
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
     },
     {
       resolve: "gatsby-transformer-remark",
@@ -173,3 +180,4 @@ module.exports = {
     }
   ]
 };
+

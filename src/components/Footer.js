@@ -7,14 +7,14 @@ const Footer = () => (
     <div className={styles.container}>
       <div>
         <a
-          href="https://twitter.com/xx"
+          href={`https://twitter.com/${config.userTwitter}`}
           target="_blank"
           rel="noopener noreferrer"
         >
             Twitter
         </a>
         <a
-          href="https://github.com/xx"
+          href={`https://github.com/${config.userGitHub}`}
           target="_blank"
           rel="noopener noreferrer"
         >

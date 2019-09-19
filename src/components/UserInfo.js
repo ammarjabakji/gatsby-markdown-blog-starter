@@ -1,15 +1,26 @@
 import React from 'react'
 import { Follow } from 'react-twitter-widgets'
+import Image from 'gatsby-image'
+import avatar from '../../content/images/avatar.jpg'
 
 
 const UserInfo = ({ config, expanded }) => (
   <>
-    <Follow
-      username={config.userTwitter}
-      options={{ count: expanded ? true : "none" }}
+
+
+    <img
+      src={config.userAvatar}
+      alt={config.userName}
     />
     <p>
-    Here is some text about the author
+      Written by <strong>{config.userName}</strong> who lives and works in San
+      Francisco building useful things.
+      {` `}
+
+      <Follow
+      username={config.userTwitter}
+      options={{ count: expanded ? true : "none" }}
+      />
     </p>
   </>
 

@@ -10,7 +10,7 @@ const Header = () => (
       <Link to="/"  activeClassName={styles.activeNav} >{config.siteTitle}</Link>
     </h1>
     <nav>
-      <ul>
+      <ul className={styles.mainNav}> 
         <li>
           <Link to="/about"  activeClassName={styles.activeNav}>About</Link>
         </li>

@@ -11,11 +11,7 @@ header {
     z-index: 9;
     margin-left: auto;
     margin-right: auto;
-    height: 60px;
-
-    h1 {
-        margin-top: 10px;
-    }
+    height: 70px;
 
     a {
         text-decoration: none;
@@ -24,14 +20,18 @@ header {
         margin-top: 0;
     }
 
+    h1 {
+        margin-top: 5px;
+    }
+
     nav a {
         color: #757575;
         transition: color 0.2s ease;
         text-decoration: none;
         display: inline-block;
         position: relative;
-        font-family: Roboto, sans-serif;
-        font-size: 14px;
+        font-size: 16px;
+        
 
         &:hover {
             color: #4f647d;
@@ -50,10 +50,11 @@ header {
     }
 }
 
-ul {
+.main-nav {
     display: flex;
     list-style: none;
     padding: 0;
+    margin-top: 30px;
     overflow: auto;
     overflow: -moz-scrollbars-none;
     scrollbar-width: none;

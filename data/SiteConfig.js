@@ -1,3 +1,5 @@
+
+
 const config = {
   siteTitle: "Gatsby Markdown Blog Starter", // Site title.
   siteTitleShort: "GA Starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
@@ -11,11 +13,12 @@ const config = {
   googleAnalyticsID: "UA-47311644-5", // GA tracking ID.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
-  userName: "Advanced User", // Username to display in the author segment.
+  userName: "Jone Due", // Username to display in the author segment.
   userEmail: "youremail@gmail.com", // Email used for RSS feed's author segment
-  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
+  userTwitter: "gatsbyjs", // Optionally renders "Follow Me" in the UserInfo segment.
+  userGitHub: "gatsbyjs", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "North Pole, Earth", // User location to display in the author segment.
-  userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
+  userAvatar: "https://i.ibb.co/WPz9CNk/avatar.jpg", // User avatar to display in the author segment.
   userDescription:
     "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment. 
   copyright: "Copyright © 2019. All rights reserved", // Copyright string for the footer of the website and RSS feed.

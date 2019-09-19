@@ -2,8 +2,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.9);
     padding: 20px 0 40px 0;
     color: rgba(255, 255, 255, 0.7);
-    margin-top: auto;
-    font-family: Roboto, sans-serif;
 
     .container {
         display: grid;
@@ -17,11 +15,12 @@ footer {
     a {
         color:#ddd;
         margin: 10px;
-        font-size: 14px;
+        &:hover {
+            color:#fff;
+        }
     }
 
     .copyright {
         text-align: right;
-        font-size: 14px;
     }
 }

@@ -35,15 +35,7 @@ export default  ({ data, pageContext }) => {
           <UserInfo config={config} />
         </div>
         <nav>
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
+          <ul className={styles.pagination}>
             <li>
               <Link to={prevslug} rel="prev">
                 ← {prevtitle}

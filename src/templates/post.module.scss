@@ -1,7 +1,11 @@
 .post-meta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: #757575;
-    font-family: Roboto, sans-serif;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
 }
