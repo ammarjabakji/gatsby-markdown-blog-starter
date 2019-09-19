@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql , Link } from 'gatsby'
 import Layout from '../layout'
-import UserInfo from '../components/UserInfo'
+import Bio from '../components/Bio'
 import PostTags from '../components/PostTags'
 import SocialLinks from '../components/SocialLinks'
 import SEO from '../components/SEO'
@@ -32,7 +32,8 @@ export default  ({ data, pageContext }) => {
             <PostTags tags={post.tags} />
             <SocialLinks postPath={slug} postNode={postNode} />
           </div>
-          <UserInfo config={config} />
+          <hr />
+          <Bio config={config} />
         </div>
         <nav>
           <ul className={styles.pagination}>

@@ -1,14 +1,11 @@
 import React from 'react'
 import { Follow } from 'react-twitter-widgets'
-import Image from 'gatsby-image'
-import avatar from '../../content/images/avatar.jpg'
+import styles from './Bio.module.scss'
 
-
-const UserInfo = ({ config, expanded }) => (
+const Bio = ({ config, expanded }) => (
   <>
-
-
     <img
+      className={styles.avatar}
       src={config.userAvatar}
       alt={config.userName}
     />
@@ -18,12 +15,11 @@ const UserInfo = ({ config, expanded }) => (
       {` `}
 
       <Follow
-      username={config.userTwitter}
-      options={{ count: expanded ? true : "none" }}
+        username={config.userTwitter}
+        options={{ count: expanded ? true : "none" }}
       />
     </p>
   </>
-
 )
 
-export default UserInfo;
+export default Bio;

@@ -15,8 +15,8 @@ const config = {
   dateFormat: "DD/MM/YYYY", // Date format for display.
   userName: "Jone Due", // Username to display in the author segment.
   userEmail: "youremail@gmail.com", // Email used for RSS feed's author segment
-  userTwitter: "gatsbyjs", // Optionally renders "Follow Me" in the UserInfo segment.
-  userGitHub: "gatsbyjs", // Optionally renders "Follow Me" in the UserInfo segment.
+  userTwitter: "gatsbyjs", // Optionally renders "Follow Me" in the Bio segment.
+  userGitHub: "gatsbyjs", // Optionally renders "Follow Me" in the Bio segment.
   userLocation: "North Pole, Earth", // User location to display in the author segment.
   userAvatar: "https://i.ibb.co/WPz9CNk/avatar.jpg", // User avatar to display in the author segment.
   userDescription:
