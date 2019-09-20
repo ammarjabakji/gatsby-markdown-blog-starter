@@ -42,7 +42,7 @@ If you are interested in a foundation for building ultra-fast websites, you can 
   - Embed YouTube videos
   - Embed Tweets
 - Typography
-- Prism syntax highlighte
+- Prism syntax highlighter
 - Tags
   - Separate page for posts under each tag
 - Categories
