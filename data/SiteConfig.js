@@ -2,7 +2,7 @@
 
 const config = {
   siteTitle: "Gatsby Markdown Blog Starter", // Site title.
-  siteTitleShort: "GA Starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleShort: "Gatsby Markdown Blog Starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Gatsby Markdown Blog Starter", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://www.yourwebsite.com", // Domain of your website without pathPrefix.
@@ -23,7 +23,7 @@ const config = {
     "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment. 
   copyright: "Copyright © 2019. All rights reserved", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
-  backgroundColor: "#ddd" // Used for setting manifest background color.
+  backgroundColor: "red" // Used for setting manifest background color.
 };
 
 // Validate

@@ -13,7 +13,7 @@ module.exports = {
       image_url: `${urljoin(
         config.siteUrl,
         config.pathPrefix
-      )}/logos/logo-512.png`,
+      )}/logos/logo-48.png`,
       copyright: config.copyright
     }
   },
@@ -90,16 +90,16 @@ module.exports = {
         display: "minimal-ui",
         icons: [
           {
-            src: "/logos/logo-192x192.png",
-            sizes: "192x192",
-            type: "image/png"
+            src: '/logos/logo-48.png',
+            sizes: '48x48',
+            type: 'image/png',
           },
           {
-            src: "/logos/logo-512x512.png",
-            sizes: "512x512",
-            type: "image/png"
-          }
-        ]
+            src: '/logos/logo-1024.png',
+            sizes: '1024x1024',
+            type: 'image/png',
+          },
+        ],
       }
     },
     "gatsby-plugin-offline",

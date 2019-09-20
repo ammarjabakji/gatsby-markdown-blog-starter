@@ -22,7 +22,11 @@
 @media (max-width: 1200px) {
     .social-links {
         position: relative;
-        display: inherit;
         top: 0;
+    }
+
+    .social-links div {
+        display: inline-grid;
+        position: relative;
     }
 }
