@@ -42,12 +42,14 @@ If you are interested in a foundation for building ultra-fast websites, you can 
   - Embed YouTube videos
   - Embed Tweets
 - Typography
+- Prism syntax highlighte
 - Tags
   - Separate page for posts under each tag
 - Categories
   - Separate page for posts under each category
 - Google Analytics support
 - NPM scripts for GitHub Pages deployment
+- Htaccess ready deployment to apache server
 - Social features
   - Twitter tweet button
   - Facebook share/share count
@@ -64,10 +66,11 @@ If you are interested in a foundation for building ultra-fast websites, you can 
   - Twitter Tags (Twitter Cards)
 - RSS feeds
 - Loading progress for slow networks
+- Web App Manifest support (PWA)
 - Offline support
-- Web App Manifest support
 - `/static/` and content folders are available to use with `gatsby-image` out of the box
 - Netlify deploy configuration
+- CSS Modules / sass support
 - Development tools
   - ESLint for linting
   - Prettier for code style
