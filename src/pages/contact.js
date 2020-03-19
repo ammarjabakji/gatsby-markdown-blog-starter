@@ -12,4 +12,4 @@ const ContactPage = () => (
     </main>
   </Layout>
 )
-export default ContactPage;
+export default ContactPage

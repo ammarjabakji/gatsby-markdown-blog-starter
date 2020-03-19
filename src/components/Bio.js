@@ -13,13 +13,12 @@ const Bio = ({ config, expanded }) => (
       Written by <strong>{config.userName}</strong> who lives and works in San
       Francisco building useful things.
       {` `}
-
       <Follow
         username={config.userTwitter}
-        options={{ count: expanded ? true : "none" }}
+        options={{ count: expanded ? true : 'none' }}
       />
     </p>
   </>
 )
 
-export default Bio;
+export default Bio

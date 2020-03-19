@@ -11,6 +11,6 @@ const AboutPage = () => (
       <About />
     </main>
   </Layout>
- )
+)
 
-export default AboutPage;
+export default AboutPage

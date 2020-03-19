@@ -4,7 +4,7 @@
   "version": "1.1.0",
   "author": "Ammar Jabakji <ammarjabakji@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.14.0",
+    "gatsby": "^2.19.49",
     "gatsby-image": "^2.2.14",
     "gatsby-plugin-catch-links": "^2.1.5",
     "gatsby-plugin-feed": "^2.3.9",
@@ -29,7 +29,7 @@
     "gatsby-transformer-sharp": "^2.2.12",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "prismjs": "^1.17.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -54,8 +54,9 @@
     "remark-cli": "^6.0.1",
     "remark-preset-lint-recommended": "^3.0.3",
     "stylefmt": "^6.0.3",
-    "stylelint": "^10.1.0",
-    "stylelint-config-standard": "^18.3.0",
+    "stylelint": "^13.2.1",
+    "stylelint-config-standard-scss": "^1.1.0",
+    "stylelint-scss": "^3.15.0",
     "write-good": "^1.0.2"
   },
   "keywords": [

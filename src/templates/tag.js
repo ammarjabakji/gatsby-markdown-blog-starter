@@ -7,14 +7,15 @@ import config from '../../data/SiteConfig'
 
 const TagTemplate = ({ data, pageContext }) => (
   <Layout>
-    <main>         
-      <Helmet title={`Posts tagged as "${pageContext.tag}" | ${config.siteTitle}`} />
+    <main>
+      <Helmet
+        title={`Posts tagged as "${pageContext.tag}" | ${config.siteTitle}`}
+      />
       <PostListing postEdges={data.allMarkdownRemark.edges} />
     </main>
-
-  </Layout> 
-  )
-  export default TagTemplate
+  </Layout>
+)
+export default TagTemplate
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
@@ -44,4 +45,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

@@ -6,9 +6,8 @@ import PostListing from '../components/PostListing'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 
-
 const Index = ({ data }) => (
-  <Layout> 
+  <Layout>
     <main>
       <Helmet title={config.siteTitle} />
       <SEO />
@@ -17,7 +16,7 @@ const Index = ({ data }) => (
   </Layout>
 )
 
-export default Index;
+export default Index
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
@@ -45,4 +44,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
